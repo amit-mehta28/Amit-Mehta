@@ -86,6 +86,72 @@ a {
     margin: 0;
 }
 
+//  HERO SECTION
+
+.hello{
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.hero_name{
+    font-size: 65px;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    color: #ea4343;
+    margin-bottom: 20px;
+}
+
+.hero_profession{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero_btns a svg{
+    width: 16px;
+    height: 16px;
+    fill: white;
+    vertical-align: middle;
+}
+
+.btn{
+    background:#ea4343;
+    padding: 10px 35px;
+    font-weight: 700;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Responsive Header
 @media (max-width: 760px){
