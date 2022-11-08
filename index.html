@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Mehta !</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ====== HEADER START ====== -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav d-flex">
+                <ul class="logo">
+                    <li> <a href="#"> AMIT MEHTA !</a></li>
+                    <!-- <img src="" alt=""> -->
+                </ul>
+                <ul class="nav_list d-flex">
+                    <li class="nav_item"> <a href="#" class="nav_link">Home </a></li>
+                    <li> <a href="#" class="nav_link"> About </a></li>
+                    <li> <a href="#" class="nav_link"> Portfolio </a></li>
+                    <li> <a href="#" class="nav_link"> Service </a></li>
+                    <li> <a href="#" class="nav_link"> Testimonial </a></li>
+                    <li> <a href="#" class="nav_link"> Blog </a></li>
+                    <li> <a href="#" class="nav_link"> Contact </a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        let toggle = document.querySelector('.hamburger');
+        var navList = document.querySelector(".nav_list");
+        toggle.addEventListener("click", () => {
+            navList.classList.toggle("active");
+        })
+    </script>
+</body>
+
+</html>
