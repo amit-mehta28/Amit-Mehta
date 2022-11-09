@@ -9,6 +9,10 @@
 
 body {
     background: #2e2b2b;
+    font-size: 1.6rem;
+    word-wrap: break-word;
+    line-height: 1.7;
+    font-weight: 700;
 }
 
 li {
@@ -21,7 +25,7 @@ a {
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 1750px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -33,7 +37,7 @@ a {
 
 // HEADER
 .header{
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .nav {
@@ -41,8 +45,10 @@ a {
 }
 
 .logo{
-    font-weight: 600; 
-    font-size: 22px;
+    // font-weight: 600; 
+    // font-size: 40px;
+    max-width: 85px;
+    height: 34px;
 }
 
 .nav_list {
@@ -51,7 +57,7 @@ a {
 }
 
 .nav_link{
-   color: white;
+
    &:hover{
      color:#ea4343;
     }
@@ -88,40 +94,52 @@ a {
 
 //  HERO SECTION
 
+.hero_content{
+    justify-content: space-between;
+}
+
+.hero_img{  
+    height: 400px;
+}
 .hello{
-    font-size: 20px;
-    margin-bottom: 20px;
     display: inline-block;
-    font-weight: 600;
 }
 
 .hero_name{
     font-size: 65px;
     letter-spacing: 0.02em;
-    font-weight: 700;
     color: #ea4343;
-    margin-bottom: 20px;
 }
 
 .hero_profession{
-    font-size: 20px;
-    font-weight: 600;
     margin-bottom: 20px;
 }
 
-.hero_btns a svg{
-    width: 16px;
-    height: 16px;
+.mail_icon{
+    width: 18px;
+    height: 18px;
     fill: white;
     vertical-align: middle;
+    margin: -4px 0 0 6px;
+
+    &:hover{
+        fill:black;
+    }
 }
+
+
 
 .btn{
     background:#ea4343;
-    padding: 10px 35px;
-    font-weight: 700;
+    padding: 15px 46px;
+    // font-weight: 700;
     border-radius: 5px;
     display: inline-block;
+    white-space: nowrap;
+}
+
+.hero_btns{
+   gap: 50px;
 }
 
 
