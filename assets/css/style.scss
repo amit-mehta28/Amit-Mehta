@@ -28,7 +28,7 @@ img{
     max-width: 100%;
 }
 .container {
-    max-width: 1750px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -37,15 +37,15 @@ img{
     align-items: center;
 }
 .big-heading{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 }
 .mid-heading{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
 }
 .small-heading{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -55,12 +55,24 @@ img{
     line-height: 1.7;
 }
 
+.btn{
+    background:#ea4343;
+    padding: 15px 46px;
+    font-weight: 700;
+    border-radius: 5px;
+    white-space: nowrap;
+    border: 2px solid #ea4343;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: #2e2b2b;
+    }
+}
 
 // HEADER  =====================================================================================
 
 .header{
-    padding: 30px 0;
-    position: fixed;
+    padding: 15px 0;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -81,7 +93,7 @@ img{
 }
 .nav_link{
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
    &:hover{
      color:#ea4343;
     }
@@ -98,6 +110,8 @@ img{
 
 .nav_link:hover:after {
     width: 100%;
+    left: 0;
+    right: auto;
 }
 
 .hamburger{
@@ -127,15 +141,16 @@ img{
 .hero_img{  
     height: 400px;
 }
+
 .hello{
-    font-size: 40px;
-    font-weight: 700;
+   margin-bottom: 15px;
 }
 
 .hero_name{
-    font-size: 111px;
+    font-size: 90px;
     letter-spacing: 0.02em;
     color: #ea4343;
+    margin-bottom: 15px;
 }
 
 .hero_profession{
@@ -148,28 +163,36 @@ img{
     fill: white;
     vertical-align: middle;
     margin: -4px 0 0 6px;
-
-    &:hover{
-        fill:black;
-    }
-}
-
-.btn{
-    background:#ea4343;
-    padding: 15px 46px;
-    // font-weight: 700;
-    border-radius: 5px;
-    display: inline-block;
-    white-space: nowrap;
 }
 
 .hero_btns{
    gap: 50px;
 }
+.hero_link{
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    &:after{
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        background: #ea4343;
+        left: auto;
+        right: 0;
+        bottom: -2px;
+        transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+    }
+    &:hover:after{
+        width: 100%;
+        left: 0;
+        right: auto;
+    }
+}
 
 .hero_img{
-    width: 600px;
-    height: 800px;
+    width: 500px;
+    height: 600px;
     object-fit: cover;
 }
 

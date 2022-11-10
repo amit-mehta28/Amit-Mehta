@@ -29,7 +29,7 @@ img {
 }
 
 .container {
-  max-width: 1750px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -40,17 +40,17 @@ img {
 }
 
 .big-heading {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 .mid-heading {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 .small-heading {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -60,9 +60,23 @@ img {
   line-height: 1.7;
 }
 
+.btn {
+  background: #ea4343;
+  padding: 15px 46px;
+  font-weight: 700;
+  border-radius: 5px;
+  white-space: nowrap;
+  border: 2px solid #ea4343;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #2e2b2b;
+}
+
 .header {
-  padding: 30px 0;
-  position: fixed;
+  padding: 15px 0;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -85,7 +99,7 @@ img {
 
 .nav_link {
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .nav_link:hover {
   color: #ea4343;
@@ -102,6 +116,8 @@ img {
 
 .nav_link:hover:after {
   width: 100%;
+  left: 0;
+  right: auto;
 }
 
 .hamburger {
@@ -129,14 +145,14 @@ img {
 }
 
 .hello {
-  font-size: 40px;
-  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .hero_name {
-  font-size: 111px;
+  font-size: 90px;
   letter-spacing: 0.02em;
   color: #ea4343;
+  margin-bottom: 15px;
 }
 
 .hero_profession {
@@ -150,25 +166,36 @@ img {
   vertical-align: middle;
   margin: -4px 0 0 6px;
 }
-.mail_icon:hover {
-  fill: black;
-}
-
-.btn {
-  background: #ea4343;
-  padding: 15px 46px;
-  border-radius: 5px;
-  display: inline-block;
-  white-space: nowrap;
-}
 
 .hero_btns {
   gap: 50px;
 }
 
+.hero_link {
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.hero_link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  background: #ea4343;
+  left: auto;
+  right: 0;
+  bottom: -2px;
+  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+}
+.hero_link:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
 .hero_img {
-  width: 600px;
-  height: 800px;
+  width: 500px;
+  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }
