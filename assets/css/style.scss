@@ -1,4 +1,4 @@
-// COMMON CSS
+// COMMON CSS =====================================================================================
 * {
     margin: 0;
     padding: 0;
@@ -6,58 +6,82 @@
     font-family: 'Josefin Sans', sans-serif, 'Poppins';
     color: white;
 }
-
 body {
     background: #2e2b2b;
-    font-size: 1.6rem;
-    word-wrap: break-word;
-    line-height: 1.7;
-    font-weight: 700;
+    // font-size: 1.6rem;
+    // word-wrap: break-word;
+    // line-height: 1.7;
+    // font-weight: 700;
 }
-
 li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
     color: white;
+    display: inline-block;
 }
-
+span{
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+}
 .container {
     max-width: 1750px;
     margin: 0 auto;
     padding: 0 20px;
 }
-
 .d-flex {
     display: flex;
     align-items: center;
 }
-
-// HEADER
-.header{
-    padding: 30px 0;
+.big-heading{
+    font-size: 60px;
+    font-weight: 700;
+}
+.mid-heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+.small-heading{
+    font-size: 24px;
+    font-weight: 700;
 }
 
+.text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+// HEADER  =====================================================================================
+
+.header{
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #111111;
+}
 .nav {
     justify-content: space-between;
 }
-
 .logo{
-    // font-weight: 600; 
-    // font-size: 40px;
-    max-width: 85px;
-    height: 34px;
+    font-weight: 600; 
+    font-size: 40px;
+    // max-width: 85px;
+    // height: 34px;
 }
-
 .nav_list {
     justify-content: space-between;
     gap: 30px;
 }
-
 .nav_link{
-
+    font-weight: 600;
+    font-size: 1.6rem;
    &:hover{
      color:#ea4343;
     }
@@ -92,7 +116,9 @@ a {
     margin: 0;
 }
 
-//  HERO SECTION
+
+
+//  HERO SECTION  =====================================================================================
 
 .hero_content{
     justify-content: space-between;
@@ -102,11 +128,12 @@ a {
     height: 400px;
 }
 .hello{
-    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .hero_name{
-    font-size: 65px;
+    font-size: 111px;
     letter-spacing: 0.02em;
     color: #ea4343;
 }
@@ -127,8 +154,6 @@ a {
     }
 }
 
-
-
 .btn{
     background:#ea4343;
     padding: 15px 46px;
@@ -142,7 +167,11 @@ a {
    gap: 50px;
 }
 
-
+.hero_img{
+    width: 600px;
+    height: 800px;
+    object-fit: cover;
+}
 
 
 
@@ -172,7 +201,7 @@ a {
 
 
 // Responsive Header
-@media (max-width: 760px){
+@media (max-width: 1024px){
     .nav_list{
         // display: none;  
         position: fixed;
